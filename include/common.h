@@ -1,0 +1,6 @@
+#ifndef INCLUDE_COMMON_H
+#define INCLUDE_COMMON_H
+
+#define MARCO_WILL_BE_REPLACE 1000
+
+#endif
