@@ -16,6 +16,7 @@ def edit(file_path):
                 os.system('g++ -c '+file_path+' -o '+file_path[0:-4]+'.o')
             if first_line[13] == '1':
                 os.system('g++ '+file_path+' -o '+file_path[0:-4]+'.out') ## 待修改
+                os.system('echo '+file_path)
                 os.system('./'+file_path[0:-4]+'.out')
 
 def delete_file(file_path):
