@@ -10,7 +10,7 @@ public:
 
 int main()
 {
-    BASE *tmp = new BASE;
+    const BASE *tmp = new BASE;
 
     return 1; 
 }
