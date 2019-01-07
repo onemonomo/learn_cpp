@@ -12,6 +12,10 @@ public:
     {
         base1_data = 1;
     }
+    virtual void v_func_base1()
+    {
+        return;
+    }
     int base1_data;
 };
 
@@ -67,6 +71,8 @@ class RectangleMultiDerive1 : public Derive1, public Derive2
 
 int main()
 {
+    int *a = new int;
+    cout<<sizeof(a);
     cout<<"基类第一个成员变量偏移\n";
     cout<<OFF_SET(BASE1, base1_data)<<endl;
     cout<<"单继承\n";
